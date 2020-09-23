@@ -1,6 +1,6 @@
 # Front-End
 
-## Build Setup
+## VueJs Build Setup
 
 ``` bash
 # install dependencies
