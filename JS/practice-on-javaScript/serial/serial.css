@@ -1,0 +1,37 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    background: #07689f;
+}
+.btn
+{
+    box-sizing: border-box;
+    margin: 200px auto;
+    display: block;
+    color: #3f72af;
+    padding: 20px 10px;
+    font-size: 30px;
+    font-weight: bold;
+    background: #112d4e;
+    border: none;
+    outline: 0;
+    border-radius: 25px;
+    
+}
+.btn:hover
+{
+    border: 1px solid #112d4e;
+    color: #112d4e;
+    background: none;
+
+}
+div
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    color: #112d4e;
+}

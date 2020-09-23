@@ -1,0 +1,17 @@
+body
+{
+    background:  linear-gradient(to bottom, #000066 0%, #ff99cc 100%);
+    height: 800px;
+}
+p
+{
+    color: #ff99cc;
+}
+p:after
+{
+    content: "_"
+}
+button
+{
+    
+}

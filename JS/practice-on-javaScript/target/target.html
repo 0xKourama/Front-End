@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body onclick="myfunction(event)">
+   <h1>welcome</h1>
+   <br>
+   <span>this is span</span>
+   <br>
+   <br>
+   <button>Click Here</button>
+   <p id="demo"></p>
+   <script>
+    function myfunction(event)
+       {
+           document.getElementById("demo").innerHTML = event.target.tagName;
+       }
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+ *
+{
+    margin: 0;
+}
+body
+{
+    background: #000820;
+}
+.thum img
+{
+    width: 150px;
+    height: 150px;
+    margin: 0.5%;
+    border: 2px solid #F4E8FF;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+}
+.thum img:hover
+{
+    border: 2px solid #F0A400;
+}
+.preview img
+{
+    width: 600px;
+    height: 600px;
+    border: 2px solid #F4E8FF;
+    border-radius: 10px;
+    transition: all 2s ease-in-out;
+    
+}

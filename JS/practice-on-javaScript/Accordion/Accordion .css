@@ -1,0 +1,41 @@
+
+.container
+{
+    width: 80%;
+    margin: 50px auto;
+}
+.Accordion
+{
+    width: 100%;
+    outline: 0;
+    border: 0;
+    padding: 1%;
+    font-size: 20px;
+    text-align: left;
+    background: #ddd;
+    cursor: pointer;
+    
+}
+.Accordion:hover
+{
+    background: #aaa;
+    
+}
+.Accordion:after
+{
+    content:"\002b";
+    float: right;
+    font-weight: bold;
+    color:#333;
+}
+.active:after
+{
+    content: "\2212";
+}
+.desc
+{
+    padding: 0px 15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.9s;
+}

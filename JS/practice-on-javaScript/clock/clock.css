@@ -1,0 +1,27 @@
+body
+{
+    font-family: 'Press Start 2P', cursive;
+    background: #dadada;
+}
+h1
+{
+    color: #204969;
+    position: absolute;
+    top: 310px;
+    color: #22eaca;
+    font-size: 60px;
+    padding-left: 150px;
+    font-weight: 1000;
+}
+div
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 50px;
+    /*font-family: 'Monoton', cursive;*/
+    color: #22eaca;
+
+
+}

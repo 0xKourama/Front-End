@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://ez-css.now.sh">
+    <title>Todo App</title>
+    <style>
+        .done {
+            text-decoration: line-through;
+            color: #598C64;
+            background-color: #D4EDDA;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        button {
+            border: none;
+            outline: none;
+            border-radius: 10px;
+        }
+        .add {
+            background-color: #CCE5FF;
+        }
+        .remove {
+            background-color: #F8D7DA;
+        }
+        .all {
+            background-color: #FFF3CD;
+        }
+    </style>
+</head>
+<body>
+    <main id="app">
+        <h3>{{ title }}</h3>
+        <form @submit.prevent="addTodo"> <!-- [1] create form   -->
+            <label for="newTodo">New Todo</label>
+            <input v-model="newTodo" type="text" name="newTodo" id="newTodo"> <!--[2] watch newTodo properaity-->
+            <button class="add" type="submit" name="button">Add</button>
+        </form>
+            <button class="all" @click="allDone" type="button">Mark All Done</button>
+        <ul>
+            <!-- [5] print todo in li tag using for loop -->
+            <li v-for="todo in todos">
+                <input type="checkbox" v-model="todo.done">
+                <span :class="{ done: todo.done}" id="red">{{ todo.title }}</span>
+                <button class="remove" @click="removeTodo(todo)" type="button" name="button">Rrmove todo</button>
+            </li>
+        </ul>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

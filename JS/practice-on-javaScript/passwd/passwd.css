@@ -1,0 +1,95 @@
+body
+{
+ background: #00F04B;   
+font-family: sans-serif
+}
+.hide
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    
+}
+form 
+{
+    margin: 30px;
+}
+input
+{
+    width: 480px;
+    padding: 10px 15px;
+    text-align: left;
+    outline: 0;
+    color:#00F04B;
+    border: none;
+    border-radius: 10px
+}
+input:hover
+{
+    color: white;
+    background: #00F04B;
+    border: 2px solid white;
+}
+span
+{
+    color: white;
+}
+button
+{
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: none;
+    color: #00F04B;
+    background: white;
+    font-weight: bold;
+    border-radius: 20px;
+    outline: 0;
+}
+button:hover
+{
+    color: white;
+    background: #00F04B;
+    border: 2px solid white;
+}
+.white
+{
+    color: white;
+}
+.green
+{
+    color: #00F04B;
+}
+/* do not group these rules */
+*::-webkit-input-placeholder {
+    color: #00F04B;
+    font-weight: bold;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: #00F04B;
+    opacity: 1;
+    font-weight: bold;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: #00F04B;
+    opacity: 1;
+    font-weight: bold;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #00F04B;
+    font-weight: bold;
+}
+*::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #00F04B;
+    font-weight: bold;
+}
+*::placeholder {
+    /* modern browser */
+    color: #00F04B;
+    font-weight: bold;
+}

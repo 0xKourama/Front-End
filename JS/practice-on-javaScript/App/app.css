@@ -1,0 +1,62 @@
+*
+{
+    margin: 0;
+}
+body
+{
+    background: #f3f3f3;
+    font-family: monospace;
+}
+.container
+{
+    width: 900px;
+    margin: auto;
+    background: #fff;
+    padding: 2%;
+}
+h1
+{
+    font-size: 30px;
+    padding: 15px;
+}
+button
+{
+    padding: 10px;
+    font-size: 20px; 
+    border: 1px solid blue;
+    border-radius: 10px;
+    outline: 0;
+    color: white;
+    background: green;
+}
+button:hover
+{
+    cursor: pointer;
+    background: white;
+    color: green;
+    border: 1px solid green;
+}
+ul
+{
+    padding: 20px;
+    text-align: left ;
+}
+ul li 
+{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0.75%;
+    list-style: none;
+    text-transform: capitalize;
+    transform: all 0.7s ease-in-out;
+}
+ul li:hover
+{
+    cursor: pointer;
+    color: green;    
+}
+.active
+{
+    background: black;
+    color: white;
+}

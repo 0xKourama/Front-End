@@ -1,0 +1,923 @@
+/*
+
+###### PUBLIC STYLE #######
+
+
+*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body 
+{
+font-family: tahmoa ,arial; 
+    height: auto;
+} 
+.container 
+{
+    width: 90%;
+    margin: auto;
+    
+}
+.clear 
+{
+    clear: both;
+}
+/*
+#################################
+            nav style
+#################################
+*/
+/*star nav*/
+.nav
+{
+    
+    color: black;
+    background: #FFFFFF;
+    overflow: hidden;
+    padding: 20px 0px;
+    position: relative;
+    border-bottom: 0.5px solid black;
+    
+}
+.logo
+{
+    width: 50%;
+    float: left;
+    color: #EB5425;
+    text-transform: capitalize;
+    
+}
+.logo h2
+{
+    font-size: 30px;
+    font-weight: bold;
+}
+/* responsive nav*/
+    .nav input , .nav label
+    {
+        position: absolute;
+        top: 15px;
+        right: 25px;
+
+    }
+    .nav input
+    {
+        display: none;
+        cursor: pointer;
+    }
+    .nav label
+    {
+        display: block;
+        width: 30px;
+        height: 30px;
+        background-image: url(../img/Navbar/open.png);
+        background-size: cover;
+        cursor: pointer;
+    }
+    .nav input:checked ~ .links ul 
+    {
+        display: block;    
+    }
+    .nav input:checked ~ label 
+    {
+        background-image: url(../img/Navbar/close.png);    
+    }
+/* responsive nav*/
+.links ul
+{
+    width: 50%;
+    float: left;
+    list-style: none;
+    padding: 10px 0;
+}
+.links ul li 
+{
+    display: inline-block;
+    
+}
+.links ul li a
+{
+    font-size: 15px;
+    display: block;
+    text-decoration: none;
+    padding-left: 20px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+}
+.links ul li a:hover
+{
+    color: #EB5425;
+}
+/*Media for nav bar style*/
+@media (min-width:992px)
+{
+    .nav label {
+        display: none;
+    }
+}
+@media (max-width: 991px) 
+{
+    .logo
+    {
+        width: 100%;
+        float: none;
+    }
+    .links ul
+    {
+         width: 100%;
+        float:  none;
+        margin-top: 20px;
+        display: none;
+        
+    }
+    .links ul li 
+    {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        
+        
+    }
+}
+/*end nav*/
+/*
+#################################
+            home style
+#################################
+*/
+/*start home section*/
+.home
+{
+   height: 500px;
+    background-image: url(../img/Home/home-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    
+}
+.home_info
+{
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.home h2
+{
+    font-size: 60px;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #5F5F5F;
+    margin-bottom: 20px;
+    
+}
+.home  h4
+{
+    font-size: 50px;
+    color: #EB5425;
+    margin-bottom: 20px;
+}
+.home p
+{
+    color: gray;
+    font-size: 12px;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+.home p span
+{
+    color: #232323;
+    color: gray;
+    font-weight: bold;
+    font-size: 15px;
+}
+.home button
+{
+    margin-top: 20px;
+    font-size: 30px;
+    color: white;
+    padding: 12px 28px;
+    background-color: #EB5425;
+    border: none;
+    border-radius: 10px;  
+    font-weight: bold;
+}
+.home button:hover
+{
+    color: #EB5425;
+    background: none;
+    border: .5px solid #EB5425;
+    cursor: pointer;
+}
+    /*start media for home section*/
+        @media (max-width:768px)
+        {
+            .home h2 
+            {
+                color: #EB5425;
+                font-size: 30px;   
+            }
+            .home h4
+            {
+                font-size: 90%;
+            }
+            .home p
+            {
+                font-size: 60%;
+            }
+            .home button
+            {
+                font-size: 70%;
+            }
+            
+}
+    /*end media for home section*/
+/*end home section*/
+/*
+#################################
+            work style
+#################################
+*/
+/*start work section*/
+.work
+{
+    height: auto;
+    padding: 50px 0px;
+    background: #fff;
+    overflow: hidden;
+}
+.work h1
+{
+    text-transform: uppercase;
+    color: gray;
+    font-size: 30px;
+    font-family: tahoma;
+}
+.work h1 span
+{
+    font-size: 30px;
+    font-weight: normal;
+    
+}
+.work bold
+{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    font-size: 35px;
+}
+.work .part
+{
+    width: 29%;
+    height: auto;
+    float: left;
+    border: 1px solid #EB5425;
+    border-radius: 25px;
+    margin: 20px 8px;
+    padding: 100px 10px;
+    text-align: center;
+}
+.part:hover
+{
+    border: 1px solid #C6C6C6;
+}
+.part i
+{
+    color: #C6C6C6;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-size: 80px;
+   
+}
+.part i:hover
+{
+    color: #EB5425;
+    cursor: pointer;
+}
+.part h4 
+{
+    text-transform: uppercase;
+    color: #EB5425;
+    font-size: 30px;
+} 
+.part hr
+{
+    margin: 20px 50px;
+    width: 70%;
+}
+.part p 
+{
+    color: #C6C6C6;
+    text-align: center,justify;
+    
+}
+.part p:hover
+{
+ color: #EB5425;  
+}
+/*start media of work section*/
+@media (max-width:768px)
+{
+    .work .part
+    {
+        width: 90%;
+    }
+}
+
+/*end media of work section*/
+/*end work section*/
+/*
+#################################
+            portfolio style
+#################################
+*/
+/*start portfolio section */
+.active
+{
+    color: white;
+    background: #EB5425;
+}
+.portfolio 
+{
+    background-color: #F8F8F8;
+    height:auto;
+    overflow: hidden;
+}
+.portfolio span
+{
+    font-weight: normal;
+}
+.portfolio h2 
+{
+    padding-top: 25px;
+    font-size: 40px;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px;
+}
+.portfolio ul 
+{
+    text-align: center;
+    list-style: none;
+    margin-bottom: 40px;
+    
+}
+.portfolio ul li
+{
+    
+    display: inline;
+    
+    
+}
+.portfolio ul li a 
+{
+    color: black;
+    text-decoration: none;
+    padding: 10px 30px;
+}
+.portfolio ul li a:hover
+{
+    color: #EB5425;
+}
+.active:hover
+{
+    color: #EB5425;
+    background: none;
+    border: 1px solid #EB5425;
+    border-radius: 10px;
+}
+.box div 
+{
+    position: relative;
+}
+.portfolio .box div 
+{
+    width: 25%;
+    float: left;
+    font-size: 0;
+    position: relative;
+    
+}
+.portfolio .box div img
+{
+width: 100%
+}
+.portfolio .box div img:hover
+{
+    opacity: 0.9;
+    
+}
+/*start media for portfolio*/
+@media (max-width:500px)
+    {
+    .portfolio .box div
+    {
+        width: 100%;
+    }
+    .portfolio ul li
+    {
+        display: block;
+        padding-top: 15px;
+    }
+}
+@media (min-width:501px)and (max-width:768px)
+{
+    .portfolio .box div
+    {
+        width: 50%;
+    }
+    .portfolio ul li
+    {
+        display: block;
+        padding-top: 15px;
+    }
+}
+
+/*end media for portfolio*/
+.profile
+{
+    padding: 50px 0px;
+    overflow: hidden;
+}
+.profile .myprofile 
+{
+    width: 50%;
+    float: left;
+}
+.profile .myprofile h2,.profile .myskills h2
+{
+    text-transform:uppercase;
+    font-weight: bold
+    color: #EB5424;
+    font-size: 70px;
+    margin: 20px 0px;;
+}
+.profile .myprofile h2 span,.profile .myskills h2 span
+{
+    font-weight: normal;
+}
+.profile .myprofile dt
+{
+    float: left;
+    clear: left;
+    width: 100px;
+    
+    font-weight: bold;
+    color: #EB5424;
+}
+.profile .myprofile dd
+{
+    color: gray;
+    font-weight: normal;
+    margin: 0 0 0 110px;
+    padding: 0 0 0.5em 0;
+}
+.profile .myskills 
+{
+    width: 50%;
+    float: left;
+}
+.profile .myskills p
+{
+    color: gray;
+    margin-bottom: 20px;
+    
+}
+.profile .bar
+{
+     overflow: hidden;
+    padding: 10px 0;
+    margin-bottom: 10px
+    
+}
+.profile .myskills .bar .title
+{
+    float: left;
+    font-weight: bold;
+    font-family: tahoma;
+    padding: 10px 0px;
+    
+}
+.profile .myskills .bar .perc
+{
+    float: right;
+    color: #EB5425;
+}
+.profile .myskills .bar .progress1
+{
+    height: 2px;
+    width: 100%;
+    background: #EB5425;
+    margin-top: 40px;
+}
+.profile .myskills .bar .progress2
+{
+    height: 2px;
+    width: 90%;
+    background: #EB5425;
+    margin-top: 40px;
+}
+.profile .myskills .bar .progress3
+{
+    height: 2px;
+    width: 80%;
+    background: #EB5425;
+    margin-top: 40px;
+}
+/*media*/
+@media (max-width:768px)
+{
+    .profile .myprofile ,
+    .profile .myskills 
+    {
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+    .profile .myprofile
+    {
+        margin-bottom: 20px;
+    }
+    
+}
+/**/
+/*end portfolio section */
+/*
+/*
+#################################
+            creative style
+#################################
+*/
+/*start creative*/
+.creative
+{
+    background-image: url(../img/creative/about-bg.jpg);
+    height: auto;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+.creative-info
+{
+    padding: 90px 0px;
+    width: 50%;
+    float: right;
+    margin: auto
+}
+.creative-info h2,
+.creative-info h4
+{
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.creative-info h4
+{
+    color: #EB5425;
+}
+.creative-info span
+{
+    font-weight: normal;
+}
+.creative-info p
+{
+    margin-top: 90px;
+    font-size: 27px;
+    color: gray;
+    text-align: justify;
+    word-spacing: 1.2;
+}
+.creative-info p a
+{
+    text-decoration: none;
+    color: blue;
+}
+.creative-info p a:hover
+{
+    color: #EB5425;
+}
+/*media for creative section*/
+@media (max-width:768px)
+{
+    .creative-info
+    {
+        text-align: center;
+        width: 100%;
+        height: auto; 
+    }
+    .creative-info p,
+    .creative-info p a
+    {
+        color: #EB5425;
+    }
+    .creative-info p a
+    {
+        font-weight: bold;
+    }
+}
+
+
+/*end creative*/
+/*
+#################################
+            socail style
+#################################
+*/
+/*start social*/
+.social-media
+{
+    height: auto;
+    overflow: hidden;
+    text-align: justify;
+    
+}
+.social-media div
+{
+   width: 33.33%;
+    float: left;
+    box-sizing: border-box;
+    padding: 50px 30px;
+    
+}
+.social-media div:hover
+{
+    background: #EB5425;
+}
+.face
+{
+    
+    background-color: #3B5998;
+}
+.twitter
+{
+    
+     background-color: #498CBF;
+}
+.pin
+{
+    background-color: #CC2127;
+}
+.social-media i 
+{
+    color: white;
+}
+.social-media p
+{
+    color: white;
+    font-size: 25px;
+    display: inline-block;
+    padding: 20px;    
+}
+.font1
+{
+    font-weight:1000;
+}
+.font2
+{
+    font-weight: normal;
+}
+/*media of social */
+@media (max-width:1000px)
+{
+    .social-media div
+    {
+        width: 100%;
+        float: none;
+        padding: 50px 0;
+        text-align: center;
+        clear: both;
+    }
+}
+
+/*end social*/
+/*
+#################################
+            media style
+#################################
+*/
+/*start drop*/
+.drop
+{
+    padding: 50px 0;
+    text-align: center;
+    overflow: hidden;
+}
+.drop h2
+{
+    
+    color: #EB5425;
+    margin-bottom: 30px;
+    font-size: 60px;
+}
+.drop h2 span
+{
+    font-weight: normal;
+}
+form
+{
+    width: 70%;
+    margin: auto;
+}
+form input
+{
+    box-sizing: border-box;
+    border: 0.5px solid #EB5425;
+    border-radius: 10px;
+    outline: 0;
+    padding: 5px;
+    margin-bottom: 10px
+}
+form input:hover
+{
+    border: 0.5px solid #CCCCCC;
+    color: #EB5425;
+}
+form .input2
+{
+    overflow: hidden;
+}
+form .input2 input
+{
+    width: 49%; 
+}
+form .input2 input[type=text]
+{
+    float: left;
+}
+form .input2 input[type=email]
+{
+    float: right;
+}
+.sub
+{
+    width: 100%;
+}
+textarea
+{
+    width: 100%;
+    outline: 0;
+    background: white;
+    border: 0.5px solid #cccccc;
+    color: #EB5425;
+    border-radius: 5px;
+    padding: 10px 0 0 10px;
+}
+textarea:hover
+{
+    border: 0.5px solid #EB5425;
+    color: #EB5425;
+    
+}
+.btn
+{
+    background: #EB5425;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: white;
+}
+.btn:hover
+{
+    background: none;
+    color: #EB5425;
+    border: .5px solid #EB5425;
+}
+@media (max-width:575px) {
+    .drop .h2{
+        font-size: 40px
+    }
+    
+    .drop form .input2 input {
+        width: 100%
+    }
+    
+    .drop form {
+        width: 90%
+    }
+}
+/*end drop*/
+/*
+#################################
+            footer style
+#################################
+*/
+/*start footer*/
+.footer
+{
+    text-align: center;
+    height: 50px;
+    background: #EB5425; 
+}
+.footer:hover
+{
+    border-top: 1px solid #EB5425;
+    background: white;
+}
+.footer p
+{
+    padding-top: 15px;
+    color: white;
+    height: auto;
+}
+.footer p:hover
+{
+    color: #EB5425;
+}
+/*end footer*/
+/*
+#################################
+            media style
+#################################
+*/
+/*start profile*/
+
+/*end profile profile*/
+/*
+#################################
+            media style
+#################################
+/*
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) { ... }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px) { ... }
+
+*/
+/*
+.profile
+{
+    height: 400px;
+    padding: 40px 0px;
+}
+.profile .myprofile 
+{
+    width: 50%;
+}
+.profile .myprofile h2
+{
+    text-transform:uppercase;
+    font-weight: bold
+    color: #EB5424;
+    font-size: 70px;
+    margin: 20px 0px;;
+}
+.profile .myprofile h2 span
+{
+    font-weight: normal;
+}
+.profile .myprofile dt
+{
+    float: left;
+    clear: left;
+    width: 100px;
+    
+    font-weight: bold;
+    color: #EB5424;
+}
+.profile .myprofile dd
+{
+    color: gray;
+    font-weight: normal;
+    margin: 0 0 0 110px;
+    padding: 0 0 0.5em 0;
+}
+.profile .myskills
+{
+    width: 50%;
+    float: left;
+   
+progress {
+  border: none;
+  width: 400px;
+  height: 60px;
+  background: crimson;
+}
+
+progress {
+  color: lightblue;
+}
+
+progress::-webkit-progress-value {
+  background: lightblue;
+}
+
+progress::-moz-progress-bar {
+  background: lightcolor;
+}
+}*/
